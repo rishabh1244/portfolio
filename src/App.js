@@ -1,5 +1,4 @@
 import Home from "./components/home/Home.js"
-import Menu from "./components/menu/Menu.js"
 import Skills from "./components/skills/Skills.js"
 
 import {
@@ -8,11 +7,12 @@ import {
     Route
 } from "react-router-dom";
 
+
 function App() {
     return (
         <div className="App">
             <div>
-                <Router>
+                <Router basename="portfolio">
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/Skills" element={<Skills />} />
