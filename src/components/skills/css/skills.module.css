@@ -1,0 +1,72 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin-left: 38vw;
+    min-height: 40px;
+    border-right: 3px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(25, end) forwards, blinkCursor 1.5s step-end infinite;
+
+}
+
+.homeButton {
+    text-decoration: none;
+
+    display: inline-block;
+    margin: 3rem auto 0;
+    /* centers it horizontally */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 0px black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.homeButton:hover {
+    background-color: black;
+    color: white;
+    /* subtle neon text pop */
+    box-shadow: 0 0 12px grey;
+    transform: scale(1.03);
+
+}
+
+.homeButton:active {
+
+    transform: scale(0.97);
+    box-shadow: 0 0 5px #00ff99;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+
+        width: 13ch;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}

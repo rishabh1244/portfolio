@@ -1,0 +1,203 @@
+.content {
+    margin-top: 15vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* allows wrapping on small screens */
+    position: relative;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    flex: 1 1 60%;
+    min-width: 250px;
+}
+
+.text2 {
+    font-size: 0.9rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.subheading {
+    margin-top: 1.5em;
+    font-size: 0.9rem;
+    text-decoration: underline dotted;
+
+}
+
+.textItem {
+    margin-top: 0.3em;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.subtitle {
+    margin-top: 1em;
+    font-size: 0.8rem;
+}
+
+.pic {
+    top: -5vh;
+    position: relative;
+    right: 0;
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.tech {
+    display: inline-block;
+    margin: 3rem auto 0;
+    /* centers it horizontally */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 0px black;
+}
+
+/* Hover + Active state */
+.tech:hover {
+    background-color: black;
+    color: white;
+    /* subtle neon text pop */
+    box-shadow: 0 0 12px grey;
+    transform: scale(1.03);
+}
+
+.tech:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 5px #00ff99;
+}
+
+/* Heading typing animation */
+.heading {
+    font-family: 'Press Start 2P', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 0.15em solid black;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    animation:
+        typing 4s steps(25, end) forwards,
+        blinkCursor 1.5s step-end infinite;
+}
+
+.tech {
+    margin-top: 10vh;
+}
+
+.quote {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 8rem;
+    font-size: 8px;
+    animation: fadeIn 2s ease-in-out;
+
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+        /* subtle zoom effect */
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 22ch;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .text {
+        flex: 1 1 100%;
+    }
+
+    .pic {
+        flex: 1 1 100%;
+        margin-top: 1.5em;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 0.9rem;
+    }
+
+    .text2,
+    .textItem,
+    .subtitle {
+        font-size: 0.7rem;
+    }
+
+    .image {
+        max-width: 180px;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
