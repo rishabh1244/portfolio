@@ -16,11 +16,17 @@
 
 }
 
+.homeBtnWrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
 .homeButton {
     text-decoration: none;
 
     display: inline-block;
-    margin: 3rem auto 0;
+    margin: 0;
     /* centers it horizontally */
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9rem;
@@ -34,8 +40,16 @@
     letter-spacing: 1px;
     transition: all 0.25s ease-in-out;
     box-shadow: 0 0 0px black;
-    margin-left: 10px;
     margin-top: 10px;
+}
+
+.homeIcon {
+    margin-right: 10px;
+    font-size: 1rem;
+    display: inline-block;
+    transform: translateY(-1px);
+    text-shadow: 2px 2px 0px black;
+    /* pixel-ish shadow */
 }
 
 .homeButton:hover {

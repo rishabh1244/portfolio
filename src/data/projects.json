@@ -1,0 +1,32 @@
+[
+    {
+        "Title": "Break The Code",
+        "Description": "A problem-solving platform where devs \"Break-The-Code\" while an LLM attempts to fix it.",
+        "Github": "https://github.com/rishabh1244/Break-The-Code",
+        "Display": "btc.png"
+    },
+    {
+        "Title": "RayCaster.",
+        "Description": "A simple RayCaster written in JavaScript using the Canvas API.",
+        "Github": "https://github.com/rishabh1244/raycasting-js",
+        "Display": "final.gif"
+    },
+    {
+        "Title": "Sorting Algorithm Vis.",
+        "Description": "A graphical interface built in C using RayLib to visualize how sorting algorithms work.",
+        "Github": "https://github.com/rishabh1244/sorting-algo-visualiser",
+        "Display": "https://panthema.net/2013/sound-of-sorting/thumb.gif"
+    },
+    {
+        "Title": "Neural Network in C.",
+        "Description": "Implimented a basic feedforward Neural Network in C and Visualiser using Raylib Library",
+        "Github": "https://github.com/rishabh1244/Neural-Network-C",
+        "Display": "https://charonhub.deeplearning.ai/content/images/2022/09/dfbcdc70-a9a2-4967-95b8-6866a6a0a6bf.gif"
+    },
+    {
+        "Title": "Flappy Bird JS",
+        "Description": "Coded a basic Flappy bird game in Javascript",
+        "Github": "https://github.com/rishabh1244/Flappy-Bird-Js",
+        "Display": "https://sweezy-cursors.com/wp-content/uploads/cursor/flappy-bird-animated/flappy-bird-animated-custom-cursor.gif"
+    }
+]

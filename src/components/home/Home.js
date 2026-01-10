@@ -28,7 +28,7 @@ function Home() {
                 <h2 className={styles.subheading}>Current Obsession's</h2>
                 <br />
                 <p className={styles.textItem}>
-                    🤖 AI/ML  🐧 Linux  💻 Embedded C  📐 Math  🌌 Physics Simulations  🌐 Web3  📚 Novels  🏛️ History 
+                    🤖 AI/ML  🐧 Linux  💻 Embedded C  📐 Math  🌌 Physics Simulations  🌐 Web3  📚 Novels  🏛️ History
                 </p>
 
             </div>
@@ -54,15 +54,6 @@ function Home() {
 
 
             </button>
-            {/*
-                <div className={styles.quote}>
-                <h1>
-                    “The ultimate fate of all intelligent beings has always been to become as grand as their thoughts.”
-                    <br /><br />—- Cixin Liu
-                </h1>
-            </div>
-            */}
-
         </div >
 
 
